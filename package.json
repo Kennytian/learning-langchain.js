@@ -1,25 +1,41 @@
 {
-  "name": "langchain",
+  "name": "learning-langchain.js",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "demo1": "ts-node src/demo1.ts",
-    "demo2": "ts-node src/demo2.ts"
+    "demo2": "ts-node src/demo2.ts",
+    "demo3": "ts-node src/demo3.ts",
+    "joke": "ts-node src/joke.ts",
+    "joke-stream": "ts-node src/joke-stream.ts",
+    "json-mode": "ts-node src/json-mode.ts",
+    "extractionFunctionSchema": "ts-node src/extractionFunctionSchema.ts",
+    "serp-api": "ts-node src/serp-api.ts",
+    "serp-api-2": "ts-node src/serp-api-2.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "https://github.com/Kennytian",
   "license": "ISC",
   "dependencies": {
+    "@langchain/community": "^0.0.32",
     "@langchain/core": "^0.1.33",
     "@langchain/openai": "^0.0.14",
-    "@langchain/community": "^0.0.32",
+    "dotenv": "^16.4.4",
     "langchain": "^0.1.21",
-    "dotenv": "^16.4.4"
+    "zod": "^3.22.4",
+    "zod-to-json-schema": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20.10.4",
-    "nodemon": "^3.0.3",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-simple-import-sort": "^12.0.0",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }

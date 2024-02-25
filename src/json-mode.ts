@@ -3,15 +3,18 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const model = new OpenAI({
+const jsonModeModel = new OpenAI({
   openAIApiKey: process.env.OPEN_AI_API_KEY, //你的OpenAI API Key
-  temperature: 0.9,
+  modelName: "gpt-4-1106-preview",
 });
 
 async function run() {
   try {
-    const res = await model.invoke("写一首诗，限制20个字");
-    console.log(res);
+    const result = await jsonModeModel.invoke([
+      ["system", "Only return JSON"],
+      ["human", "Hi there!"],
+    ]);
+    console.log("result====", result);
   } catch (e) {
     console.error(e);
   }
