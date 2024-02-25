@@ -1,14 +1,12 @@
-import {PromptTemplate} from "@langchain/core/prompts";
-import {LLMChain} from "langchain/chains";
-import {OpenAI} from "@langchain/openai";
-import * as dotenv from "dotenv"
+import { PromptTemplate } from "@langchain/core/prompts";
+import { OpenAI } from "@langchain/openai";
+import * as dotenv from "dotenv";
+import { LLMChain } from "langchain/chains";
 
 dotenv.config();
 
-console.log('process.env.OPEN_AI_API_KEY====', process.env.OPEN_AI_API_KEY)
-
 const model = new OpenAI({
-    openAIApiKey: process.env.OPEN_AI_API_KEY,//你的OpenAI API Key
+    openAIApiKey: process.env.OPEN_AI_API_KEY, // 你的OpenAI API Key
     temperature: 0.9
 });
 
