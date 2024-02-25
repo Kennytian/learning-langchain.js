@@ -1,0 +1,26 @@
+{
+  "name": "langchain",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "demo1": "ts-node src/demo1.ts",
+    "demo2": "ts-node src/demo2.ts"
+  },
+  "author": "https://github.com/Kennytian",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^0.1.33",
+    "@langchain/openai": "^0.0.14",
+    "@langchain/community": "^0.0.32",
+    "langchain": "^0.1.21",
+    "dotenv": "^16.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
