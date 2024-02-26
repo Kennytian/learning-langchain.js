@@ -15,7 +15,7 @@ const model = new ChatOpenAI({
 
 const tools = [
   new Calculator(),
-  new SerpAPI(process.env.SERP_API_API_KEY, { hl: "zh-cn" }),
+  new SerpAPI(process.env.SERPAPI_API_KEY, { hl: "zh-cn" }),
 ];
 
 async function run() {

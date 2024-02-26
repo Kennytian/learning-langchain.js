@@ -13,7 +13,7 @@ const model = new OpenAI({
 });
 
 const tools = [
-  new SerpAPI(process.env.SERP_API_API_KEY, {
+  new SerpAPI(process.env.SERPAPI_API_KEY, {
     location: "Austin,Texas,United States",
     gl: "us",
     hl: "zh-cn",
