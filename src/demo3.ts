@@ -4,8 +4,6 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-console.log("process.env.OPEN_AI_API_KEY====", process.env.OPEN_AI_API_KEY);
-
 const chatModel = new OpenAI({
   openAIApiKey: process.env.OPEN_AI_API_KEY, //你的OpenAI API Key
   temperature: 0.9,

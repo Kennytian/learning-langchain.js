@@ -1,7 +1,7 @@
 import { OpenAI } from "@langchain/openai";
 import * as dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ encoding: "utf8" });
 
 const model = new OpenAI({
   openAIApiKey: process.env.OPEN_AI_API_KEY, //你的OpenAI API Key
